@@ -1,0 +1,16 @@
+#!/bin/sh
+cd tests/epub_samples/test_epub
+
+rm -f ../test_epub.epub
+zip -X0 ../test_epub.epub mimetype
+zip -rDX9 ../test_epub.epub * -x "*.DS_Store" -x mimetype -x OPS/index2.html
+
+mv OPS/index.html index.tmp
+cp OPS/index2.html OPS/index.html
+rm -f ../test_epub_2.epub
+zip -X0 ../test_epub_2.epub mimetype
+zip -rDX9 ../test_epub_2.epub * -x "*.DS_Store" -x mimetype -x OPS/index2.html -x index.tmp
+mv index.tmp OPS/index.html
+
+cd ../../..
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version='3.0'
+         unique-identifier='pub-id'
+         xmlns='http://www.idpf.org/2007/opf'
+         prefix='rendition: http://www.idpf.org/vocab/rendition/#
+                 ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/'>
+                 
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <dc:title>Test EPUB</dc:title>
+      <dc:creator>EFL</dc:creator>
+      <dc:publisher>EFL</dc:publisher>
+      <dc:date>2015-10-02</dc:date>
+      <dc:language>en</dc:language>
+      <dc:identifier id="pub-id">1</dc:identifier>
+    </metadata>
+    <manifest>
+        <item id="file_3" href="index.html" media-type="application/xhtml+xml" properties="scripted"/>
+        <item id="file_7" href="script.js" media-type="application/javascript"/>
+        <item id="file_8" href="efl-discovery.js" media-type="application/javascript"/>
+    </manifest>
+    <spine toc="ncx">
+        <itemref idref="file_3" />
+    </spine>
+</package>

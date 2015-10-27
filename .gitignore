@@ -1,0 +1,16 @@
+.idea/
+bower_components/
+node_modules/
+dist/
+example_dist/
+es5/
+components-loader.js
+test_epub.epub
+tests/epub_samples/test_epub/OPS/efl-discovery.min.js
+tests/epub_samples/test_epub/OPS/efl-discovery.js
+tests/epub_samples/test_epub_2.epub
+demo/
+modules_tester/
+
+env
+docker-compose.yml

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EFL Web Player Example</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="scripts/jszip.min.js"></script>
+    <script src="scripts/epub.min.js"></script>
+    <script src="scripts/efl-player.js"></script>
+    <script src="scripts/efl-journey.js"></script>
+</head>
+<body>
+    <h2>Demo 23.10.2015</h2>
+    <div id="journey"></div>
+    <script>
+        EFLPlayer.init({width: 600, height: 500});
+        EFLJourney.init(EFLPlayer, 'journey', '', {});
+    </script>
+</body>
+</html>

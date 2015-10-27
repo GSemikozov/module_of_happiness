@@ -1,0 +1,19 @@
+{
+  "name": "applicant-journey-player-web",
+  "version": "0.1.0",
+  "homepage": "https://github.com/eflglobal/applicant-journey-player-web",
+  "authors": [
+    "Tomasz Netczuk <netczuk.tomasz@gmail.com>",
+    "Michał Laskowski <michal.laskowski@polidea.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "epub.js": "https://github.com/futurepress/epub.js.git#f12252",
+    "es6-promise-polyfill": "~1.0.2",
+    "jszip": "Stuk/jszip#2.5.0"
+  }
+}

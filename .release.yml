@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - "4.1.2"
+
+before_install:
+  - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - "npm test"
+
+after_success:
+- echo "178.62.255.6 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpTFJBXuCjvOQAY47Q9JRjTxtUDB1VpG24HAtB7UP9Rb5kyrKYisAOcn2wGCACfsXvNZMjiukZUePxDs5a4l/WG8IINK9O08GubNeB1R2P4S/6f9dFSY30Yc+vELze5fvBkvGc+BIZhU1ZJhln+rNf2pOmqVkJzSQIjqqENkNMQW0geEVum58q+LZVZD7Xs1HhUB2MZLha/uWlJ1kNP+bYG0+oh1qsKRYc5GFRf511vRnzgAssk50EHRr9N9X5A68+V40wrK5wbhe0JDe1AiDjhuXBdmIpdJ/BJshKlwDMOHuvNkdcmpwPER7xHxASTp+GLDo7KMVACAzmmqZLL7/x" >> ~/.ssh/known_hosts
+- git remote add deploy ssh://root@178.62.255.6/EFL-player-web/eflglobal-applicant-journey-player-web.git
+- git push deploy HEAD:master -f

@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - "4.1.2"
+
+before_install:
+  - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - "npm test"

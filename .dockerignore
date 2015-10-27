@@ -1,0 +1,8 @@
+.git/
+.idea/
+.bower_components/
+demo/
+dist/
+es5/
+.node_modules/
+

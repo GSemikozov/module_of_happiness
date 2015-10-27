@@ -1,0 +1,13 @@
+#!/bin/sh
+cd examples_src/exampleModule
+
+mkdir ../../examples_dist/epub
+rm -f ../../examples_dist/epub/test_epub.epub
+zip -X0 ../../examples_dist/epub/test_epub.epub mimetype
+zip -rDX9 ../../examples_dist/epub/test_epub.epub * -x "*.DS_Store" -x mimetype
+
+# rm -f ../../examples_dist/epub/exampleModule.epub
+# zip -X0 ../../examples_dist/epub/exampleModule.epub mimetype
+# zip -rDX9 ../../examples_dist/epub/exampleModule.epub * -x "*.DS_Store" -x mimetype
+
+cd ../../
